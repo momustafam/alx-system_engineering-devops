@@ -1,2 +1,2 @@
 #!/bin/bashh
-echo $PATH | grep -o ":/" | wc -l
+echo "/home/julien/bin:/home/julien/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin" | grep -o ":/" | wc -l
