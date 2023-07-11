@@ -1,2 +1,2 @@
-#!/bin/bashh
-echo $PATH | grep -o ":/" | echo $(($(wc -l)+1))
+#!/bin/bash
+echo $PATH | grep -o ":/[a-zA-Z]" | echo $(($(wc -l)+1))
