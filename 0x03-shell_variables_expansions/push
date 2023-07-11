@@ -1,0 +1,6 @@
+#!/bin/bash
+rm *~
+chmod u+x [[:digit:]]*
+git add .
+git commit -m "auto pushing"
+git push origin main
