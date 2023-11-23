@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+#Bash script
+
+a=10
+while ((a>0))
+do
+	if [ $a == 4 ]
+	then
+		echo "bad luck"
+	elif [ $a == 8 ]
+	then
+		echo "good luch"
+	else
+		echo "Best School"
+done
