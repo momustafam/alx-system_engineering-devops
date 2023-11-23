@@ -10,7 +10,7 @@ do
 		echo "bad luck"
 	elif [ $a == 8 ]
 	then
-		echo "good luch"
+		echo "good luck"
 	else
 		echo "Best School"
 	fi
