@@ -4,7 +4,6 @@
 a=1
 while ((a<11))
 do
-	((a++))
 	if [ $a == 4 ]
 	then
 		echo "bad luck"
@@ -14,4 +13,5 @@ do
 	else
 		echo "Best School"
 	fi
+	((a++))
 done
