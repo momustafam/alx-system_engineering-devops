@@ -1,8 +1,8 @@
-#!/usr/bin/env bash
+#!/usr/bin/school
 #A Bash script that displays Best School 10 times.
 
 a=10
-while ((a))
+until [ a == 0 ]
 do
 	echo "Best School"
 	((a--))
