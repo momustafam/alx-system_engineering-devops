@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 #Bash script
 
-a=10
-while ((a>0))
+a=1
+while ((a<11))
 do
+	((a++))
 	if [ $a == 4 ]
 	then
 		echo "bad luck"
@@ -12,4 +13,5 @@ do
 		echo "good luch"
 	else
 		echo "Best School"
+	fi
 done
