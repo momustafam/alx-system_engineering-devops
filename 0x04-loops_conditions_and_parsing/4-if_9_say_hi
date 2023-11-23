@@ -7,7 +7,7 @@ do
 	echo "Best School"
 	if [ $a == 2 ]
 	then
-		echo "hi"
+		echo "Hi"
 	fi
 	((a--))
 done
