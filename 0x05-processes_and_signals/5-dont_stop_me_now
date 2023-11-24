@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 #task 5
 
-kill $((ps -x | pgrep -f beyond))
+kill "$(ps -x | pgrep -f beyond)"
