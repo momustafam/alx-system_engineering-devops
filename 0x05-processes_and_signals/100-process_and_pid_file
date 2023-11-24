@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+#task 9
+
+mkdir -p /var/run/myscript.pid
+echo $$ > /var/run/myscript.pid
+
+trap "echo 'I hate the kill command'" TERM
+trap "rm /var/run/myscript.pid" QUIT
+trap "Y U no love me?!" INT
+
+while true
+do
+	echo "To infinity and beyond"
+done

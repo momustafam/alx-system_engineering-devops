@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 #task 7
 
-while ((1))
+trap "echo 'I am invincible!!!'" TERM
+while true
 do
 	echo "To infinity and beyond"
 	sleep 2
-	trap "echo 'I am invincible!!!'" TERM
 done
