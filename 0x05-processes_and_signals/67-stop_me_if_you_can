@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#task 6
+
+pkill -f beyond

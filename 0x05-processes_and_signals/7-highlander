@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#task 7
+
+while ((1))
+do
+	echo "To infinity and beyond"
+	sleep 2
+	trep "echo "I am invincible!!!"" SIGTREM
+done
