@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+#A daemon that manages the manage_my_process bash file.
+
+start_process() {
+	./manage_my_process &
+	echo $! > /var/run/my_process.pid
+	echo "manange_my_process started"
+}
+
+stop_process() {
+	kill "$(cat /var/run/my_process.pid)"
+	rm /var/run/my_process.pid
+	echo "manage_my_process stopped"
+}
+
+restart_process() {
+	kill "$(cat /var/run/my_process.pid)"
+	rm /var/run/my_process.pid
+	./manage_my_process &
+	echo $! > /var/run/my_process.pid
+	echo "manage_my_process restarted"
+}
+
+if [ "$1" == "start" ]
+then
+	start_process
+elif [ "$1" == "stop" ]
+then
+	stop_process
+elif [ "$1" == "restart" ]
+then
+	restart_process
+else
+	echo "Usage: manage_my_process {start|stop|restart}"
+fi
