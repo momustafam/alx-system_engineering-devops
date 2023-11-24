@@ -4,7 +4,7 @@
 echo "$$" > /var/run/myscript.pid
 
 term() {
-	rm /var/run/myscript.pid
+	rm -r /var/run/myscript.pid
 	exit
 }
 
