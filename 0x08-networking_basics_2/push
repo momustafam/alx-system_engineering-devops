@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# remove useless files
+rm *~
+rm *.s*
+
+# make the files of tasks are executable
+chmod u+x *
+
+# push the new changes to the alx-higher_level_programming repo
+git add .
+git commit -m "Auto pushing"
+git push
