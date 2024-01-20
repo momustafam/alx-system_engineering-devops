@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# create an ssh with a specific credintials
+ssh-keygen -f school -b 4096 -betty
