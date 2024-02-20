@@ -23,7 +23,9 @@ def get(url):
 
 
 def empTodo_csv(id):
-    '''Write the employee TODO list progress of a specific employee into a csv file.
+    '''
+        Write the employee TODO list progress of a specific employee
+        into a csv file.
 
         Parameters:
             - id (int): id of the employee
@@ -36,13 +38,14 @@ def empTodo_csv(id):
     rows = []
 
     for todo in emp_todos:
-        row = [emp_dt['id'], emp_dt['username'], todo['completed'], todo['title']]
+        row = [emp_dt['id'], emp_dt['username'],
+               todo['completed'], todo['title']]
         rows.append(row)
 
     with open("USER_ID.csv", "w", encoding="utf-8") as csvfile:
-        writer = csv.writer(csvfile)
+        writer = csv.writer(csvfile, quoting=csv.QUOTE_ALL)
         writer.writerows(rows)
-        
+
 
 def main():
     emp_id = argv[1]
