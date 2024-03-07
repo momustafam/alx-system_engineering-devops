@@ -25,4 +25,3 @@ def recurse(subreddit, hot_list=[], count=0, after=None):
 
     return recurse(subreddit, hot_l, info.get("data").get("count"),
                    info.get("data").get("after"))
-
